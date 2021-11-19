@@ -14,12 +14,6 @@ a, ul {
 p {
     color: #e5e7eb;
 }
-h1 {
-  font-size: 48px;
-  font-weight: bold;
-  color: #f9faf8;
-  margin: 0;
-}
 
 button {
   width: 100px;
@@ -48,11 +42,19 @@ button {
   align-items: center;
   padding-left: 20px;
 }
+
+.header h1{
+  font-size: 24px;
+  color: #f9faf8;
+  padding-left: 150px;
+}
+
 .nav {
   gap: 18px;
   display: flex;
   padding-right: 100px;
   font-size: 18px;
+  color: #e5e7eb;
 }
 
 /*  Hero-under header content  */
@@ -65,6 +67,13 @@ button {
 .hero-text {
   width: 400px;
   padding-right: 50px;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  font-weight: bold;
+  color: #f9faf8;
+  margin: 0;
 }
 
 .hero-image{
@@ -135,6 +144,8 @@ h2 {
   padding-right: 50px;
 }
 
+/*  Sign Up Content  */
+
 .sign-up-content{
   margin-bottom: 100px;
   display: flex;
@@ -147,7 +158,7 @@ h2 {
   background-color:#3882f6;
   border-color: #3882f6;
   padding: 28px 40px;
-  width: 1100px;
+  flex-shrink: 0;
 }
 
 .sign-up-text h4 {
@@ -165,7 +176,14 @@ h2 {
   border-style: solid;
   margin-left: 280px;
   margin-top: 30px;
+  flex-shrink: 0;
 }
+
+.sign-up-button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+/*  Footer  */
 
 .footer {
   color: white;

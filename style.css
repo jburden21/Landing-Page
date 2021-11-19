@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  overflow: hidden;
+  overflow: auto;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -75,23 +75,21 @@ h2 {
   font-size: 36px;
   font-weight:bolder;
   color: #1f2937;
+  text-align: center;
 }
 
 .middle-content {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
+  margin-top: 50px;
 }
 
 .info {
   display: flex;
-  align-self: flex-end;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 20px;
 }
 
-.box {
-  display: flex;
-  flex-shrink: 0;
+.info img{
   border: 5px;
   border-radius: 25px;
   border-style: solid;
@@ -99,7 +97,56 @@ h2 {
   height: 200px;
   border-color: #3882f6;
 }
+.info p {
+  color: #1f2937;
+  display: flex;
+  flex-wrap: wrap;
+  width: 280px;
+}
 
+.quote {
+  background-color: #e5e7eb;
+  margin-top: 50px;
+}
+
+.quote h3 {
+  font-size: 36px;
+  font-weight: lighter;
+  font-style: italic;
+  color: #1f2937;
+  text-align: center;
+}
+
+.quote p {
+  color: #1f2937;
+  font-size: 18px;
+  font-weight:bold;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 50px;
+}
+
+.sign-up{
+  margin: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sign-up-text h4 {
+  color: white;
+}
+
+.sign-up-text {
+  border: 5px;
+  border-radius: 25px;
+  border-style: solid;
+  background-color:#3882f6;
+  border-color: #3882f6;
+  padding: 50px;
+  display: flex;
+  width: 1100px;
+}
 
 .footer {
   color: white;
